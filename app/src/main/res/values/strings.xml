@@ -9,4 +9,11 @@
     <string name="register">Register</string>
     <string name="email_address">Email Address</string>
     <string name="already_have_account_login_now">Already have account? Login Now</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="what_s_your_name">What\'s your name?</string>
+    <string name="todo">TODO</string>
+    <string name="enter_the_name_you_use_in_real_life">Enter the name you use in real life.</string>
+    <string name="what_s_your_birthday">What\'s your birthday?</string>
+    <string name="chose_your_date_of_birth">Chose your date of birth.</string>
 </resources>

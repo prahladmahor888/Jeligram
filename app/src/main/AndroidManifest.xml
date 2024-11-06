@@ -13,6 +13,24 @@
         android:theme="@style/Theme.Jeligram"
         tools:targetApi="31">
         <activity
+            android:name=".RgtrdobActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RgtrnameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatActivit"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity

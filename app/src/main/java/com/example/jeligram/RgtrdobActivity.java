@@ -1,11 +1,12 @@
 package com.example.jeligram;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -14,47 +15,46 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class RegisterActivity extends AppCompatActivity {
-    private TextView Login;
-    private EditText username, emailAddress;
+public class RgtrdobActivity extends AppCompatActivity {
+
+    private EditText DateOfBirth;
+    private ImageView backButton;
     private Button nextButton;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.activity_rgtrdob);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        username = findViewById(R.id.Username);
-        emailAddress = findViewById(R.id.emailAddress);
+        DateOfBirth = findViewById(R.id.DateOfBirth);
         nextButton = findViewById(R.id.NextButton);
-        Login = findViewById(R.id.Login);
+        backButton = findViewById(R.id.BackButton);
 
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String Username = username.getText().toString();
-                String EmailAddress = emailAddress.getText().toString();
+                String dateofbirth = DateOfBirth.getText().toString();
 
-                if (Username.isEmpty() || EmailAddress.isEmpty()){
-                    Toast.makeText(RegisterActivity.this, "Fill column", Toast.LENGTH_SHORT).show();
+                if (dateofbirth.isEmpty()){
+                    Toast.makeText(RgtrdobActivity.this, "Enter DOB", Toast.LENGTH_SHORT).show();
                 }
-                else {
-                    Toast.makeText(RegisterActivity.this, "Enter next Value", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(RegisterActivity.this, RgtrnameActivity.class);
+                else{
+                    Intent intent = new Intent(RgtrdobActivity.this, HomeActivity.class);
                     startActivity(intent);
                 }
             }
         });
-        Login.setOnClickListener(new View.OnClickListener() {
+        backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
+                Intent intent = new Intent(RgtrdobActivity.this, RgtrnameActivity.class);
                 startActivity(intent);
             }
         });

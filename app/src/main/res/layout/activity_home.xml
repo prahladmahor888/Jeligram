@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/jeligram"
+            android:textSize="30sp"
+            android:paddingStart="30dp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/homePage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/todo"
+            
+            app:srcCompat="@drawable/home__streamline_solar" />
+
+        <ImageView
+            android:id="@+id/chatPage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/dialog__streamline_solar" />
+
+        <ImageView
+            android:id="@+id/personAddPage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/users_group_rounded__streamline_solar" />
+
+        <ImageView
+            android:id="@+id/reelsPage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/clapperboard_play__streamline_solar" />
+
+        <ImageView
+            android:id="@+id/notificationPage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/baseline_favorite_border_24" />
+
+        <ImageView
+            android:id="@+id/profilePage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/user_circle__streamline_solar" />
+
+    </LinearLayout>
+
+</RelativeLayout>
