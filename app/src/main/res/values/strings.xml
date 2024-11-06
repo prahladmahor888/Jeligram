@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Jeligram</string>
+    <string name="jeligram">Jeligram</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="not_yet_register_signup_now">Not yet register? SignUp Now</string>
+    <string name="next">Next</string>
+    <string name="register">Register</string>
+    <string name="email_address">Email Address</string>
+    <string name="already_have_account_login_now">Already have account? Login Now</string>
+</resources>
